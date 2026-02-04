@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #4e54c8;
+    --secondary-color: #8f94fb;
+    --text-color: #333;
+    --bg-color: #f4f7f6;
+}
+
+body {
+    background: #eef1f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.registration-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    display: flex;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.form-section {
+    flex: 2;
+    padding: 40px;
+}
+
+.benefits-section {
+    flex: 1;
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.benefits-content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.benefits-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.benefits-content li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.benefits-content i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.form-section-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.input-group-text {
+    background: white;
+    border-right: 0;
+    color: var(--primary-color);
+}
+
+.form-control {
+    border-left: 0;
+    height: 45px;
+    /* ensure text is visible */
+    color: #333 !important;
+    background-color: #fff !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+/* Fix for Select Dropdowns */
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234e54c8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+    /* Make space for arrow */
+}
+
+/* Ensure options inside select are visible */
+select option {
+    color: #333;
+    background: #fff;
+}
+
+.btn-register {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: #3a3f99;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+}
+
+.login-redirect {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-redirect a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .registration-card {
+        flex-direction: column;
+    }
+
+    .benefits-section {
+        display: none;
+    }
+}

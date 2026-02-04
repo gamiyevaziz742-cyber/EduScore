@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Quizhub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="student-login.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="floating-elements">
+                <div class="element element-1">📚</div>
+                <div class="element element-2">✏️</div>
+                <div class="element element-3">🎓</div>
+                <div class="element element-4">📝</div>
+                <div class="element element-5">🏆</div>
+                <div class="element element-6">🔍</div>
+            </div>
+            <div class="gradient-bg"></div>
+        </div>
+
+        <!-- Login Container -->
+        <div class="login-container">
+            <div class="login-wrapper">
+                <!-- Illustration Side -->
+                <div class="illustration-side">
+                    <div class="student-scene">
+                        <div class="floating-books">
+                            <div class="book book-1"></div>
+                            <div class="book book-2"></div>
+                            <div class="book book-3"></div>
+                        </div>
+                        <div class="student-character">
+                            <div class="character-head"></div>
+                            <div class="character-body"></div>
+                            <div class="character-arm"></div>
+                            <div class="laptop"></div>
+                        </div>
+                        <div class="achievement-badges">
+                            <div class="badge badge-1">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="badge badge-2">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="badge badge-3">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="illustration-text">
+                        <h3>Learn. Quiz. Succeed.</h3>
+                        <p>Join thousands of students mastering their subjects with interactive quizzes and real-time feedback.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h4>50K+</h4>
+                                <span>Active Students</span>
+                            </div>
+                            <div class="stat">
+                                <h4>95%</h4>
+                                <span>Success Rate</span>
+                            </div>
+                            <div class="stat">
+                                <h4>24/7</h4>
+                                <span>Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="form-side">
+                    <div class="form-container">
+                        <div class="header">
+                            <div class="logo">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Quizhub</span>
+                            </div>
+                            <h2>Hello Student! 👋</h2>
+                            <p>Welcome back to your learning journey</p>
+                        </div>
+
+                        <form id="loginForm" class="login-form" action="student_login.php" method="POST">
+                            <div class="form-group">
+                                <label for="username">
+                                    <i class="fas fa-user"></i>
+                                    Username or Email
+                                </label>
+                                <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">
+                                    <i class="fas fa-lock"></i>
+                                    Password
+                                </label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                    <button type="button" class="toggle-password" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="rememberMe">
+                                    <label for="rememberMe">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+
+                            <button type="submit" class="login-btn">
+                                <span class="btn-text">Continue Learning</span>
+                                <div class="btn-loader">
+                                    <div class="spinner"></div>
+                                </div>
+                            </button>
+
+                            <div class="divider">
+                                <span>Or continue with</span>
+                            </div>
+
+                            <div class="social-login">
+                                <button type="button" class="social-btn google-btn">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4zNDA5MUg5LjE4VjEwLjY1OTFIOC4xODAxQzEwLjg3IDEwLjY1OTEgMTMuMTggOC43OTU0NSAxMy4xOCA2LjQwOTA5QzEzLjE4IDUuODQwOTEgMTMuMDggNS4zMTM2NCAxMi45IDQuODQwOTFMMTYuNTEgOS4yMDQ1NVoiIGZpbGw9IiM0Mjg1RjQiLz4KPHBhdGggZD0iTTkuMTggMTMuODU0NUM3LjE0IDEzLjg1NDUgNS4zNiAxMi44ODY0IDQuMzcgMTEuMzk1NUw0LjM3IDExLjM5NTVMMi45MiAxMi44MTgyTDIuOTIgMTIuODE4MkM0LjA5IDE0LjkwOTEgNi40MSAxNi4zMTgyIDkuMTggMTYuMzE4MkMxMC41NSAxNi4zMTgyIDExLjgxIDE1Ljk0NTUgMTIuOSAxNS4yNzI3TDEyLjkgMTUuMjcyN0wxMS40NSAxMy44NTQ1SDkuMThaIiBmaWxsPSIjMzRBODUzIi8+CjxwYXRoIGQ9Ik0yLjkyIDEyLjgxODJMMi45MiAxMi44MTgyQzIuMTggMTEuNDA5MSAxLjc2IDkuNzU0NTUgMS43NiA4LjAwNDU1QzEuNzYgNi4yNTQ1NSAyLjE4IDQuNTk1NDUgMi45MiAzLjE4NjM2TDIuOTIgMy4xODYzNkw0LjM3IDQuNjA0NTVMMi45MiA1LjE4NjM2QzIuMzYgNi4zMTM2NCAyLjA5IDcuNTk1NDUgMi4wOSA4LjAwNDU1QzIuMDkgOS4zMTM2NCAyLjU0IDEwLjU0NTUgMy4yNyAxMS41NDU1TDIuOTIgMTIuODE4MloiIGZpbGw9IiNGQkJCMDAiLz4KPHBhdGggZD0iTTkuMTggMy4xODYzNkMxMC42MyAzLjE4NjM2IDExLjgxIDMuNzcyNzMgMTIuNjMgNC41NDU0NUwxMi42MyA0LjU0NTQ1TDE0LjA4IDMuMTM2MzZDMTIuOTIgMS4wNDU0NSAxMC41OSAtMC4zNjM2MzYgOS4xOCAtMC4zNjM2MzZDNi40MSAtMC4zNjM2MzYgNC4wOSAxLjA0NTQ1IDIuOTIgMy4xODYzNkwyLjkyIDMuMTg2MzZMNC4zNyA0LjYwNDU1TDIuOTIgNS4xODYzNkMzLjk5IDMuNjk1NDUgNS43NyAyLjcyNzI3IDcuODEgMi43MjcyN0g5LjE4VjMuMTg2MzZaIiBmaWxsPSIjRUE0MzM1Ii8+Cjwvc3ZnPgo=" alt="Google">
+                                    Continue with Google
+                                </button>
+                                <button type="button" class="social-btn microsoft-btn">
+                                    <i class="fab fa-microsoft"></i>
+                                    Continue with Microsoft
+                                </button>
+                            </div>
+
+                            <div class="signup-section">
+                                <p>New to Quizhub? <a href="../studentregistration/student-registration.html" class="signup-link">Join the community</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <a href="../index/index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+    </div>
+
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="student-login.js?v=2"></script>
+</body>
+</html>
