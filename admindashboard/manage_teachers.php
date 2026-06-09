@@ -19,7 +19,7 @@ $result = $conn->query("SELECT t.*, s.subject_name FROM teachers t LEFT JOIN sub
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manage Teachers - Quizhub Admin</title>
+    <title>Manage Teachers - EduScore Admin</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -37,7 +37,7 @@ $result = $conn->query("SELECT t.*, s.subject_name FROM teachers t LEFT JOIN sub
 <body>
 
 <div class="sidebar">
-    <div class="brand">Quizhub Admin</div>
+    <div class="brand">EduScore Admin</div>
     <a href="admin-dashboard.php"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a>
     <a href="manage_subjects.php"><i class="fas fa-book mr-2"></i> Subjects</a>
     <a href="manage_teachers.php" style="background-color: #495057; color: white;"><i class="fas fa-chalkboard-teacher mr-2"></i> Teachers</a>

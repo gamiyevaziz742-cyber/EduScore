@@ -46,7 +46,7 @@ function getDetails($conn, $result_id) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz History - Quizhub</title>
+  <title>Quiz History - EduScore</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -148,7 +148,7 @@ function getDetails($conn, $result_id) {
 <body>
 
 <div class="sidebar">
-    <div class="sidebar-brand"><i class="fas fa-graduation-cap"></i> Quizhub</div>
+    <div class="sidebar-brand"><i class="fas fa-graduation-cap"></i> EduScore</div>
     <div class="sidebar-menu">
         <a href="studentdashboard.php"><i class="fas fa-th-large"></i> Dashboard</a>
         <a href="studentdashboard.php#subjects"><i class="fas fa-book"></i> My Subjects</a>

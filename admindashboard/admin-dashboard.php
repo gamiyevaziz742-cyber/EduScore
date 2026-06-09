@@ -11,7 +11,7 @@ include('../db_connect.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Quizhub</title>
+    <title>Admin Dashboard - EduScore</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -79,7 +79,7 @@ include('../db_connect.php');
 <body>
 
     <div class="sidebar">
-        <div class="brand">Quizhub Admin</div>
+        <div class="brand">EduScore Admin</div>
         <a href="admin-dashboard.php"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a>
         <a href="manage_subjects.php"><i class="fas fa-book mr-2"></i> Subjects</a>
         <a href="manage_teachers.php"><i class="fas fa-chalkboard-teacher mr-2"></i> Teachers</a>

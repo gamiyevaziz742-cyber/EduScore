@@ -50,7 +50,7 @@ if($subject_id) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Dashboard - Quizhub</title>
+    <title>Teacher Dashboard - EduScore</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -341,7 +341,7 @@ if($subject_id) {
     <div class="top-nav">
         <div class="logo-section">
             <i class="fas fa-chalkboard-teacher"></i>
-            <h2>Quizhub Teacher</h2>
+            <h2>EduScore Teacher</h2>
         </div>
         <div class="user-section">
             <div class="user-info">
