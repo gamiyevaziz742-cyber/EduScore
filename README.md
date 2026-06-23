@@ -1,91 +1,134 @@
-# 🎓 Quizhub - Online Quiz Portal
+# 🎓 EduScore – Intelligent Automatic Test Assessment System     sevinqulov . azizbek
 
-**Quizhub** is a robust, web-based examination and quiz portal designed to streamline the process of conducting online assessments. Built with PHP and MySQL, it offers a seamless experience for administrators, teachers, and students.
+**EduScore** is an intelligent web-based educational platform developed as a graduation project titled:
+
+**"Ta'lim jarayonida test natijalarini avtomatik baholashning intellektual dasturiy tizimini ishlab chiqish"**
+
+The system is designed to automate the process of conducting examinations, evaluating test results, managing educational data, and generating analytical reports for educational institutions.
 
 ---
 
-## 🚀 Key Features
+## 🚀 Main Features
 
-### 🛠️ Admin Dashboard
-- **Subject Management**: Create, update, and organize various academic subjects.
-- **User Monitoring**: Manage teacher and student accounts to ensure a secure environment.
-- **System Settings**: Configure global portal parameters.
+### 👨‍💼 Administrator Panel
+
+* User management (students and teachers)
+* Subject and course management
+* System configuration and monitoring
+* Result analysis and reporting
 
 ### 👨‍🏫 Teacher Module
-- **Quiz Creation**: Design quizzes for specific subjects with ease.
-- **Question Bank**: Add, edit, and categorize questions (multiple choice).
-- **Result Analytics**: Track student performance and generate automated reports.
-- **Media Support**: Upload images for questions and profiles.
+
+* Create and manage quizzes
+* Question bank administration
+* Monitor student performance
+* Generate assessment reports
+* Upload educational materials
 
 ### 🎓 Student Module
-- **Self-Registration**: Easy signup and profile management.
-- **Take Quizzes**: Attempt subject-specific quizzes with real-time feedback.
-- **Performance History**: View past scores and detailed result breakdowns.
-- **Interactive Blog**: Access educational blogs and resources.
+
+* Secure registration and login
+* Online test participation
+* Instant result viewing
+* Performance tracking
+* Personal dashboard
+
+### 🤖 Intelligent Assessment Functions
+
+* Automatic test evaluation
+* Real-time score calculation
+* Performance analytics
+* Statistical result processing
+* Educational monitoring support
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠 Technology Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
-- **Backend**: PHP 8.x
-- **Database**: MySQL
-- **Tooling**: XAMPP / WAMP / LAMP
-
----
-
-## ⚙️ Installation & Setup
-
-### 1. Prerequisites
-- [XAMPP](https://www.apachefriends.org/index.html) (Apache & MySQL)
-- Git (optional)
-
-### 2. Local Setup
-1.  **Clone the Repository**:
-    ```bash
-    git clone https://github.com/sijanKc/Quizhub.git
-    ```
-2.  **Move to Web Root**:
-    Copy the `online_quiz_portal` folder to your XAMPP `htdocs` directory:
-    `C:\xampp\htdocs\online_quiz_portal`
-3.  **Start Services**:
-    Open the XAMPP Control Panel and start **Apache** and **MySQL**.
-4.  **Database Configuration**:
-    - Open [phpMyAdmin](http://localhost/phpmyadmin/).
-    - Create a new database named `quizhub`.
-    - (Optional) Run the `fix_database.php` script via browser to initialize tables:
-      `http://localhost/online_quiz_portal/fix_database.php`
-5.  **Access the Portals**:
-    - **Main Index**: `http://localhost/online_quiz_portal/`
-    - **Admin Login**: `http://localhost/online_quiz_portal/admin-login/`
-    - **Teacher Login**: `http://localhost/online_quiz_portal/teacher-login/`
-    - **Student Login**: `http://localhost/online_quiz_portal/studentlogin/`
+* Frontend: HTML5, CSS3, JavaScript
+* Backend: PHP 8.x
+* Database: MySQL / MariaDB
+* Server Environment: Apache
+* Development Platform: Kali Linux
 
 ---
 
-## 📁 Project Structure
+## ⚙ Installation
+
+### Requirements
+
+* PHP 8.x
+* MySQL / MariaDB
+* Apache Web Server
+* Git
+
+### Setup
+
+```bash
+git clone https://github.com/USERNAME/EduScore.git
+```
+
+Create a database:
+
+```sql
+CREATE DATABASE eduscore;
+```
+
+Import database:
+
+```bash
+mysql -u root -p eduscore < eduscore.sql
+```
+
+Configure database connection in:
+
 ```text
-├── admin-login/         # Admin authentication
-├── admindashboard/      # Admin control panel
-├── teacher-login/       # Teacher authentication
-├── teacherdashboard/    # Teacher control panel
-├── studentlogin/        # Student authentication
-├── studentdashboard/    # Student control panel
-├── index/               # Landing page and Blogs
-├── db_connect.php       # Database connection logic
-└── fix_database.php     # Helper script for DB setup
+db_connect.php
+```
+
+Run the project through Apache and open:
+
+```text
+http://localhost/EduScore
 ```
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! If you'd like to improve Quizhub, feel free to fork the repo and submit a Pull Request.
+## 📁 Project Structure
+
+```text
+├── admin-login/
+├── admindashboard/
+├── teacher-login/
+├── teacherdashboard/
+├── studentlogin/
+├── studentdashboard/
+├── index/
+├── db_connect.php
+├── database/
+└── docs/
+```
+
+---
+
+## 🎯 Project Objective
+
+The purpose of this project is to improve assessment efficiency in educational institutions through intelligent automation technologies and provide fast, accurate, and reliable evaluation of student knowledge.
+
+---
+
+## 👨‍💻 Author
+
+**Asil Jo'rayev**
+
+Graduation Project
+
+Samarkand State University
+
+2026
 
 ---
 
 ## 📄 License
-This project is for educational purposes. Feel free to use and modify it.
 
----
-
-**Developed with ❤️ by [Sijan](https://github.com/sijanKc)**
+This project was developed for educational and research purposes.
